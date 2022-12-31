@@ -15,33 +15,38 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 20% 1fr;
+  grid-template-columns: 1fr 15% 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  width: 1440px;
+  width: 100%;
   min-height: 100vh;
   background-color: var(--lightGray);
   font-family: "Outfit", sans-serif;
 }
 
-#container {
+#main {
   grid-column: 2;
 }
 
-#main {
-  padding: 15px;
-  border-radius: 20px;
+#container {
+  padding: 1rem;
+  border-radius: 1.25rem;
   background-color: var(--white);
+  max-width: 20rem;
 }
 
 #text {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 1rem;
+}
+
+.sr-only {
+  display: none;
 }
 
 img {
-  border-radius: 10px;
+  border-radius: 0.625rem;
   width: 100%;
 }
 
@@ -51,15 +56,15 @@ h3 {
 
 p {
   color: var(--grayishBlue);
-  margin-top: 20px;
-  padding-bottom: 30px;
-  font-size: 15px;
+  margin-top: 1.25rem;
+  padding-bottom: 1.875rem;
+  font-size: 1rem;
 }
 
 .attribution {
-  padding: 10px;
-  margin-top: 50px;
-  font-size: 11px;
+  padding: 0.625rem;
+  margin-top: 3.125rem;
+  font-size: 0.6875rem;
   text-align: center;
 }
 
